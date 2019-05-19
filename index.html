@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
     <title>WOW!</title>
     <audio id="audio" src="wowc.mp3" autoplay="false"></audio>
-    <link rel="stylesheet" type="text/css" href="reset.css">
+
 
 </head>
 
@@ -16,10 +16,10 @@
     <div class="main-box">
         <div class="box1"></div>
         <div class="box1"></div>
-        <div class="box1"></div>
 
-        <button class="btn1" onclick="handleClick(), playSound()">Click Here to be aMaZeD!</button>
-        <button class="btn2" onclick="offClick()">STOP!</button>
+
+        <button class="amaze" onclick="handleClick(), playSound()">Click Here to be aMaZeD!</button>
+        <button class="stop" onclick="offClick()">STOP!</button>
 
         <script>
             function playSound() {
@@ -40,17 +40,20 @@
                 const box1 = document.getElementsByClassName("box1");
                 document.getElementById("audio").loop = false
                 for (i = 0; i < box1.length; i++) {
-                    box1[i].style.background = "#363537"
+                    box1[i].style.background = "rgba(255, 255, 255, 0)"
 
                 }
             }
         </script>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-            <input type="hidden" name="cmd" value="_s-xclick" />
-            <input type="hidden" name="hosted_button_id" value="D7WS4UV485YQ6" />
-            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-        </form>
+        <div class="payPal">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick" />
+                <input type="hidden" name="hosted_button_id" value="D7WS4UV485YQ6" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+        </div>
+
     </div>
     <author class="author">by: Taylor Woodman</author>
 </body>
