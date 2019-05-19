@@ -145,7 +145,6 @@ table {
     width: 400px;
     height: 200px;
     margin: 30px;
-    border: 1px solid black;
 }
 
 .amaze {
@@ -201,6 +200,7 @@ form:focus {
     text-align: center;
     color: white;
     font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .payPal {
