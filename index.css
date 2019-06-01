@@ -175,6 +175,7 @@ table {
     background-color: #B2ECE1;
     color: #BA274A;
     font-size: 20px;
+     
 }
 
 button:active {
@@ -207,4 +208,16 @@ form:focus {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.amaze:hover{
+    background-color: #BA274A;
+    
+    color: #B2ECE1
+}
+
+.stop:hover{
+    background-color: #BA274A;
+    width: 200px;
+    color: #B2ECE1
 }
