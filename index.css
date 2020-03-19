@@ -1,223 +1,103 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-
-/* HTML5 display-role reset for older browsers */
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
 body {
-    line-height: 1;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .main-box {
-    background-color: #363537;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  background-color: #363537;
+  width: 100vw;
+  height: calc(100vh - 20px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
 }
 
 .box1 {
-    background-color: rgba(255, 255, 255, 0);
-    width: 400px;
-    height: 200px;
-    margin: 30px;
+  background-color: rgba(255, 255, 255, 0);
+  width: 400px;
+  height: 200px;
+  margin: 30px;
 }
 
 .amaze {
-    height: 50px;
-    width: 300px;
-    border: 1px solid #B2ECE1;
-    border-radius: 33px;
-    margin: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #B2ECE1;
-    color: #BA274A;
-    font-size: 20px;
+  height: 50px;
+  width: 300px;
+  border: 1px solid #b2ece1;
+  border-radius: 33px;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #b2ece1;
+  color: #ba274a;
+  font-size: 20px;
 }
 
 .stop {
-    height: 50px;
-    width: 100px;
-    border: 1px solid #B2ECE1;
-    border-radius: 33px;
-    margin: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #B2ECE1;
-    color: #BA274A;
-    font-size: 20px;
-     
+  height: 50px;
+  width: 100px;
+  border: 1px solid #b2ece1;
+  border-radius: 33px;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #b2ece1;
+  color: #ba274a;
+  font-size: 20px;
 }
 
 button:active {
-    /*to take away border, making it look like a physical button press*/
-    outline: none;
-    border: none;
+  /*to take away border, making it look like a physical button press*/
+  outline: none;
+  border: none;
 }
 
 button:focus {
-    /*to take away annoying border*/
-    outline: 0
+  /*to take away annoying border*/
+  outline: 0;
 }
 
 form:focus {
-    outline: 0
+  outline: 0;
 }
 
 .author {
-    width: 100vw;
-    background-color: #363537;
-    display: flex;
-    justify-content: end;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    margin-bottom: 10px;
+  width: 100vw;
+  background-color: #363537;
+  display: flex;
+  text-align: center;
+  color: white;
+  font-size: 20px;
 }
 
 .payPal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 2px;
 }
 
-.amaze:hover{
-    background-color: #BA274A;
-    
-    color: #B2ECE1
+.amaze:hover {
+  background-color: #ba274a;
+
+  color: #b2ece1;
 }
 
-.stop:hover{
-    background-color: #BA274A;
-    width: 200px;
-    color: #B2ECE1
+.stop:hover {
+  background-color: #ba274a;
+  width: 200px;
+  color: #b2ece1;
+}
+
+.buttons {
+  display: flex;
+  width: 500px;
+  height: 75px;
 }
